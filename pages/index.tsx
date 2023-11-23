@@ -11,7 +11,7 @@ export default function Home() {
       </header>
 
        <Navbar_Section />
-      <body>
+      <div>
               
             
             <h1>Salut !</h1>
@@ -19,7 +19,7 @@ export default function Home() {
         
 
 
-    </body>      
+    </div>      
     </>
   );
 }
