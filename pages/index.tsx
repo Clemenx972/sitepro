@@ -14,8 +14,8 @@ export default function Home() {
       <body>
               
             
-            <h1>test</h1>
-        
+            <h1>Salut !</h1>
+            <h2>baguette</h2>
         
 
 
