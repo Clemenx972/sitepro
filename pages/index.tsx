@@ -1,13 +1,11 @@
-import "@/app/global.css";
-
+import '@/app/globals.css';
 
 export default function Home() {
   return (
     <>
-      <main>
+      <main className=".temp">
         <title>Home</title>
       </main>
-      <h1>Home</h1>
     </>
   );
 }
