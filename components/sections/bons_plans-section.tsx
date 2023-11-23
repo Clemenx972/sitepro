@@ -4,8 +4,11 @@ import Link from 'next/link'
 const bons_plans = () => {
   return (
     <>    
-    <div><Link href="/">Home</Link></div>
+    <h1>
     <div>Bons Plans</div>
+    </h1>
+
+
     </>
   )
 }

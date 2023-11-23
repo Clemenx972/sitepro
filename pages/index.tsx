@@ -1,15 +1,25 @@
-import bons_plans from '@/components/bons_plans-section';
-
+import bons_plans from '@/components/sections/bons_plans-section';
+import Navbar_Section from '@/components/sections/navbar-section';
 
 import '@/app/globals.css';
 
 export default function Home() {
   return (
     <>
-      <main className=".temp">
-        <title>Home</title>
-        <bons_plans />
-      </main>
+      <header>
+        <title>Mon site</title>
+      </header>
+
+       <Navbar_Section />
+      <body>
+              
+            
+            <h1>test</h1>
+        
+        
+
+
+    </body>      
     </>
   );
 }
