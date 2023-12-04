@@ -3,18 +3,28 @@ import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 import NavLink from "@/components/nav/nav-links";
 import MenuOverlay from "../menu/menu-overlay";
+import bons_plans from "@/pages/bons_plans";
+
+import GithubIcon from "@/public/images/icones/github-icon.svg";
+import LinkedInIcon from "@/public/images/icones/linkedin-icon.svg";
+import Image from "next/image";
+import Competences from "./competences";
 
 const navigation = [
-    { name: 'Home', href: 'localhost:3000'},
-    { name: 'Bons Plans', href: '#'},
+    { name: 'Accueil', href: 'localhost:3000'},
+    { name: 'Compétences', href: 'localhost:3000'},   
+    { name: 'Projets', href: 'localhost:3000'},  
+    { name: 'Expériences', href: 'localhost:3000'}, 
+    { name: 'Bons Plans', href: 'bons_plans'},  
+    // { name: <Image src={GithubIcon} alt="Github Icon"/>, href: 'https://github.com/Hezaerd '},
 ];
 
 export default function Navbar_Section() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-10 bg-white bg-opacity-90">
-            <div className="flex flex-wrap items-center justify-between mx-auto p-8">
+        <nav className=" border-[#33353F] top-0 left-0 right-0 z-10 bg-black bg-[#121212] bg-opacity-90">
+            <div className=" flex-wrap items-center mx-auto p-8">
                 <Link
                     href="/"
                     className="text-2xl md:text-5xl text-white font-semibold"
@@ -39,22 +49,40 @@ export default function Navbar_Section() {
                         </button>
                         )}
                 </div>
-                <div className="hidden md:block md:w-auto" id="navbar-default">
-                    <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0">
+                    <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0 justify-center"> 
                         {navigation.map((item) => {
                             return (
+                                <>
                                 <li key={item.name}>
-                                    <NavLink                                        
-                                        name={item.name}
-                                        href={item.href}
-                                    />
+                                    
+                                        <NavLink                                        
+                                            name={item.name}
+                                            href={item.href}
+                                            /> 
+                                
                                 </li>
+                                </>
+                                
                             );
+                            
+                            
                         })}
-                    </ul>
-                </div>
-            </div>
+                   </ul>
+                   
+                     
+
+
+
+
+                    
+
+
+
+
+             </div>
             {isOpen ? <MenuOverlay links={navigation} /> : null}
         </nav>
     );
 }
+
+// c'est dans la balise <ul> qu'on change la position des boutons chef (justify-center pour centrer, justify-end pour mettre à droite, justify-start pour mettre à gauche)
