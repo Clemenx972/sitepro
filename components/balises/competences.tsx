@@ -48,7 +48,7 @@ const Competences = () => {
 
                                 <li className='flex items-center gap-1 text-lg'>
                                     <span>
-                                    <img src='/images/icones/javacript.png' alt="JavaScript" height={30} width={20}/>
+                                    <img src='/images/icones/javascript.png' alt="JavaScript" height={30} width={20}/>
                                     </span>
                                     
                                     <span className='text-1xl'>JavaScript</span>                           
@@ -84,7 +84,7 @@ const Competences = () => {
 
                                 <li className='flex items-center gap-1 text-lg'>
                                     <span>
-                                    <img src='/images/icones/javacript.png' alt="JavaScript" height={30} width={20}/>
+                                    <img src='/images/icones/mysql.png' alt="MySQL" height={30} width={20}/>
                                     </span>
                                     
                                     <span className='text-1xl'>mysql</span>                           
@@ -99,7 +99,7 @@ const Competences = () => {
                         <ul className='flex flex-col gap-2 mt-10'>
                                 <li className='flex items-center gap-1 text-lg'>
                                     <span>
-                                    <img src='/images/icones/githupng' alt="GitHub" height={30} width={20}/>
+                                    <img src='/images/icones/github.png' alt="GitHub" height={30} width={20}/>
                                     </span>
 
                                     <span className='text-xl'>github</span>     
