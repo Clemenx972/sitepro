@@ -11,10 +11,10 @@ import Image from "next/image";
 import Competences from "./competences";
 
 const navigation = [
-    { name: 'Accueil', href: 'localhost:3000'},
-    { name: 'Compétences', href: 'localhost:3000'},   
-    { name: 'Projets', href: 'localhost:3000'},  
-    { name: 'Expériences', href: 'localhost:3000'}, 
+    { name: 'Accueil', href: '/'},
+    { name: 'Compétences', href: '#competences'},   
+    { name: 'Projets', href: '#projets'},  
+    { name: 'Expériences', href: '#experiences'}, 
     { name: 'Bons Plans', href: 'bons_plans'},  
     // { name: <Image src={GithubIcon} alt="Github Icon"/>, href: 'https://github.com/Hezaerd '},
 ];
