@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Navbar_Section from '@/components/balises/navbar-section';
+import BonsPlansSection from '@/components/balises/bons_plans-section';
 
-const bons_plans = () => {
+const Argent = () => {
   return (
-    <div>Je suis un génie</div>
-  )
-}
+    <>
+      <Navbar_Section />
+      <BonsPlansSection />
+    </>
+  );
+};
 
-export default bons_plans
-
+export default Argent;
