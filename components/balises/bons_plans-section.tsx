@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const jobsSequence = [
     "CHANGER VOTRE VIE ?", 1000,
     "AUGMENTER VOTRE POUVOIR D'ACHAT ?", 1000,
-    "PROFITER DES VACANCES DUREMENT MERITEES ?", 1000,
+    "PROFITER DE VACANCES DUREMENT MERITEES ?", 1000,
 ];
 
 
@@ -20,8 +20,8 @@ export default function bons_plans(){
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
       >
-          <h6 className="text-black mb-4 sm:text-4xl lg:text-7xl lg:leading-normal font-bold">
-              <span className='text-xl sm:text-4xl lg:text-7xl lg:leading-normal font-bold'>
+          <h6 className="text-black mb-4 sm:text-4xl lg:text-7xl lg:leading-normal font-bold ml-14">
+              <span className='text-2xl sm:text-4xl lg:text-7xl lg:leading-normal font-bold'>
               Voulez-vous : 
               </span>
               <br></br>
@@ -30,11 +30,11 @@ export default function bons_plans(){
                   wrapper="span"
                   speed={50}
                   repeat={Infinity}
-                  style={{ fontSize: "0.64em" }}
+                  style={{ fontSize: "0.61em" }}
               />
           </h6>
-          <p className="text-black text-base sm:text-lg mb-6 lg:text-xl">
-          Comment voyager à prix réduit ?
+          <p className="flex text-2xl text-black sm:text-lg mb-6 lg:text-xl ml-14 mt-12">
+          Alors cette offre va changer votre vie !
           </p>
           
       </motion.div>
