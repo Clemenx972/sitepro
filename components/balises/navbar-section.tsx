@@ -49,6 +49,7 @@ export default function Navbar_Section() {
                         </button>
                         )}
                 </div>
+                <div className="hidden md:block md:w-auto" id="navbar-default">
                     <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0 justify-center"> 
                         {navigation.map((item) => {
                             return (
@@ -68,17 +69,7 @@ export default function Navbar_Section() {
                             
                         })}
                    </ul>
-                   
-                     
-
-
-
-
-                    
-
-
-
-
+                </div>                   
              </div>
             {isOpen ? <MenuOverlay links={navigation} /> : null}
         </nav>
