@@ -66,8 +66,30 @@ export default function bons_plans(){
             Travel Advantage propose 3 types d'abonnements : - VIP, Plus et Elite - qui vous permettront de bénéficier d'un nombre croissant d'avantages.            
             </p>
             <span className='justify-items-center'>
-                <img src='/images/abotravel.png' alt="Abonnements" weight={100} height={100} className='ml-14 mr-14'/>
-            </span>
+                <img src='/images/abotravel.png' alt="Abonnements" max-width={70} className='ml-14 mr-14'/>
+            </span><br></br>
+            <p className='flex text-3xl text-sky-700 font-bold mb-6 ml-14 mr-14 justify-between'>                
+            Mais ce n'est pas tout !</p>
+            <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'>En plus des réductions présentes sur notre site il y a des méthodes pour encore plus accentuer les économies, et cela s'appelle 
+                les crédits voyage. À chaque réservation effectuée sur la plateforme, vous cumulez des crédits voyage. Ces crédits vous permettent de réaliser 
+                des économies encore plus significatives sur vos réservations futures. Ceux-ci n'expirent jamais et peuvent être utilisés à tout moment. 
+                De plus, l'application propose un système de partage intéressant. Lorsque vous réservez un hôtel, la plateforme vous offre la possibilité 
+                de gagner 30% de crédits voyage supplémentaires en partageant simplement votre réservation sur le réseau social Facebook.</p><br></br>
+                <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'>Pour ce qu'il s'agit de la formule Elite elle présente encore un avantage supplémentaire (Il faut bien qu'on vous remercie de la confiance !).
+                Il s'agit de la présence de points de fidélité, points qui peuvent être utilisés pour effectuer des économies supplémentaires (et oui, encore!).
+                 Les points de fidélité sont cumulés chaque mois grâce à l'abonnement Élite et n'expirent jamais. (1 point de fidélité = 1€)</p>
+            <h6 className='text-sky-500 font-bold text-3xl mb-6 ml-14'>Conclusion </h6>
+            <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'>
+            Qu'attendez-vous pour passer à l'action pour changer votre vie ainsi que votre potentiel de découverte du monde et d'activités extraordinaires ?
+            Rejoignez-nous dès maintenant sur TravelAdvantage : 
+            </p>
+            <br></br>
+            <h6 className='text-sky-500 font-bold text-3xl mb-6 ml-14'>Tips </h6>
+            <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'>De vous à moi, je vous recommande la version Plus ou éventuellement la Elite si vous êtes ambicieux, 
+            car vous pourrez la partager avec un ami ou membre de la famille et bénéficier de tous les avantages de ces abonnements pour la moitié du prix ;)</p>
+            <br></br>
+            <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'> J'espère de tout coeur recevoir la nouvelle concernant votre voyage dans votre pays de rêve !</p><br></br>
+            <p className='flex text-2xl font-bold text-black ml-14 mr-14 justify-between'>À bientôt !</p><br></br>
             
             </>
       
