@@ -7,6 +7,7 @@ import Presentation from '@/components/balises/presentation';
 import Competences from '@/components/balises/competences';
 import Projets from '@/components/balises/projets';
 import Experiences from '@/components/balises/experiences';
+import Contact from '@/components/balises/contact';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Competences />
       <Projets />
       <Experiences />
+      <Contact/>
       <div></div>
     <Footer_Section />
     </>
