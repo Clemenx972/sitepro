@@ -3,7 +3,7 @@ const Competences = () => {
   return (
     <>
     <section id='competences'>
-    <div className="hidden sm:block w-full">
+    <div className="hidden sm:block w-full ">
         <div className="w-full">
             <h4 className='text-2xl mb-6 sm:mb-10 text-4x1 text-center font-extrabold '>Compétences</h4>
             <div className='flex justify-center'>

@@ -7,22 +7,22 @@ const Contact = () => {
       >
         Cliquez ici pour envoyer un mail
       </a>
-      <div className='ml-8'>Ou utilisez l'emplacement ci-dessous :</div>
+      <div className='ml-8'>Ou utilisez l&apos;emplacement ci-dessous :</div>
       <form action='https://api.web3forms.com/submit' method='POST'>
-        <div className='bg--slate-400'>
+        <div className='bg-slate-400 text-center'>
           <input
             type='hidden'
             name='access_key'
             value='9ee50700-76c3-4780-bf66-a56bc8fbe4f7'
           />
 
-          <div className='ml-8 pt-2'>
+          <div className='ml-8 pt-2 '>
             <label className='ml-6'>Votre adresse mail</label>
             <input
               type='email'
               name='email'
               placeholder='prenom.nom@gmail.com'
-              className='flex flex-col gap-5 w-[400px] h-[50px] font-medium pl-[25px] rounded-[50px] border-[none] rounded-lg;'
+              className='flex-col gap-5 w-[400px] h-[50px] font-medium pl-[25px] rounded-[50px] border-[none] rounded-lg;'
               required
             />
           </div>
@@ -32,7 +32,7 @@ const Contact = () => {
               type='text'
               name='sujet'
               placeholder='Recrutement, Projet, Autre...'
-              className='flex flex-col gap-5 w-[400px] h-[50px] font-medium pl-[25px] rounded-[50px] bg-gray-[#DCDCDC] border-[none] mb-8 rounded-lg block;'
+              className='flex-col gap-5 w-[400px] h-[50px] font-medium pl-[25px] rounded-[50px] bg-gray-[#DCDCDC] border-[none] mb-8 rounded-lg; block;'
               required
             />
           </div>
@@ -41,7 +41,7 @@ const Contact = () => {
             <textarea
               name='message'
               placeholder='Salut !'
-              className='flex pt-4 gap-5 w-[400px] h-[100px] font-medium pl-[25px] rounded-[50px] border-[none] rounded-lg ;'
+              className='pt-4 gap-5 w-[400px] h-[100px] font-medium pl-[25px] rounded-[50px] border-[none] rounded-lg ;'
               required
             ></textarea>
           </div>
