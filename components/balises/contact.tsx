@@ -15,8 +15,17 @@ const Contact = () => {
             name='access_key'
             value='9ee50700-76c3-4780-bf66-a56bc8fbe4f7'
           />
-
-          <div className='ml-8 pt-2 '>
+           <div className='ml-8 pt-4 grid justify-center'>
+            <label className='ml-6'>Votre Nom</label>
+            <input
+              type='text'
+              name='sujet'
+              placeholder='Etienne Steven'
+              className='flex-col gap-5 w-[400px] h-[50px] font-medium pl-[25px] rounded-[50px] bg-gray-[#DCDCDC] border-[none] mb-8 rounded-lg; block;'
+              required
+            />
+          </div>
+          <div className='ml-8 pt-2 grid justify-center'>
             <label className='ml-6'>Votre adresse mail</label>
             <input
               type='email'
@@ -26,7 +35,7 @@ const Contact = () => {
               required
             />
           </div>
-          <div className='ml-8 pt-4'>
+          <div className='ml-8 pt-4 grid justify-center'>
             <label className='ml-6'>Votre Sujet</label>
             <input
               type='text'
@@ -36,7 +45,7 @@ const Contact = () => {
               required
             />
           </div>
-          <div className='ml-8'>
+          <div className='ml-8 grid justify-center'>
             <label className='ml-6'>Votre message</label>
             <textarea
               name='message'
@@ -45,7 +54,7 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <div className='ml-6 pt-4'>
+          <div className='ml-6 pt-4 grid justify-center'>
             <button
               type='submit'
               className='bg-blue-800 hover:bg-blue-950 font-medium w-28'
