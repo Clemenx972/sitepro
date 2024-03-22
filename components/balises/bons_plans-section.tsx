@@ -40,7 +40,7 @@ export default function bons_plans(){
           </p><br></br></motion.div></div> 
           <h6 className='text-sky-500 font-bold unterline-offset-2 text-3xl mb-6 ml-14'>Le problème du monde actuel !</h6>    
           <p className='flex text-2xl text-black  mb-6 ml-14 mr-14 '>
-          Avec l'inflation qui détériorre petit à petit le pouvoir d'achat des français et nous force à se priver de certains plaisir de la vie,
+          Avec l&apos;inflation qui détériorre petit à petit le pouvoir d&apos;achat des français et nous force à se priver de certains plaisir de la vie,
            les familles sont contraintes à réduire leurs budgets de loisir. Je ne vous souhaite pas cela. Dans cette démarche,
             je rédige ce site dont le but est de vous expliquer comment VOUS aider à profiter de cette vie qui est la vôtre sans se mettre 
             dans des situations difficiles. 
@@ -51,36 +51,36 @@ export default function bons_plans(){
           <p className='flex text-2xl text-black  mb-6 ml-14 mr-14 justify-between'>
           Contrairement à des applications de réservation comme Booking ou TripAdvisor qui se font une marge de profit importante
            à cause du coût de publicité, Travel Advantage se démarque par son envie de permettre un voyage ou des vacances à petit prix. 
-           Afin d'obtenir des résultats différents de ceux que nous connaissons déjà, Travel Advantage a choisi d'adopter un modèle économique
-            beaucoup plus avantageux pour nous en tant que clients, il s'agit d'un système d'abonnement. 
+           Afin d&apos;obtenir des résultats différents de ceux que nous connaissons déjà, Travel Advantage a choisi d&apos;adopter un modèle économique
+            beaucoup plus avantageux pour nous en tant que clients, il s&apos;agit d&apos;un système d&apos;abonnement. 
           </p>
           <h6 className='text-sky-500 font-bold text-3xl mb-6 ml-14'>Contenu de la plateforme </h6>
           <p className='flex text-2xl text-black  mb-6 ml-14 mr-14 justify-between'>
           Cette plateforme offre de nombreux avantages grâce à son fonctionnement basé sur trois piliers :
-            Le premier pilier est que La plateforme vous permet de réaliser des économies sur les hôtels, les vols, les transferts, les croisières, les séjours et les activités. Elle propose également un onglet forfait comprenant des offres de vols et d'hôtels, ainsi qu'une section dédiée au shopping en ligne.
+            Le premier pilier est que La plateforme vous permet de réaliser des économies sur les hôtels, les vols, les transferts, les croisières, les séjours et les activités. Elle propose également un onglet forfait comprenant des offres de vols et d&apos;hôtels, ainsi qu&apos;une section dédiée au shopping en ligne.
             Le deuxième pilier concerne les avantages exclusifs offerts aux membres, tels que des crédits de voyage, des points de fidélité et une garantie de 150% du prix le plus bas pour les hôtels. Cette garantie vous permet de recevoir un remboursement de 150% de la différence si vous trouvez un hôtel moins cher ailleurs, sous réserve des conditions de la plateforme Travel Advantage.
-            Le troisière pilier s'agit des Life Experiences, le produit phare de la plateforme Travel Advantage, que nous examinerons plus en détail par la suite
+            Le troisière pilier s&apos;agit des Life Experiences, le produit phare de la plateforme Travel Advantage, que nous examinerons plus en détail par la suite
             </p>
-            <h6 className='text-sky-500 font-bold text-3xl mb-6 ml-14'>Système d'abonnement </h6>
+            <h6 className='text-sky-500 font-bold text-3xl mb-6 ml-14'>Système d&apos;abonnement </h6>
             <p className='flex text-2xl text-black  mb-6 ml-14 mr-14 justify-between'>
-            Travel Advantage propose 3 types d'abonnements : - VIP, Plus et Elite - qui vous permettront de bénéficier d'un nombre croissant d'avantages.            
+            Travel Advantage propose 3 types d&apos;abonnements : - VIP, Plus et Elite - qui vous permettront de bénéficier d&apos;un nombre croissant d&apos;avantages.            
             </p>
             <span className='justify-items-center'>
                 <img src='/images/abotravel.png' alt="Abonnements" max-width={70} className='ml-14 mr-14'/>
             </span><br></br>
             <p className='flex text-3xl text-sky-700 font-bold mb-6 ml-14 mr-14 justify-between'>                
-            Mais ce n'est pas tout !</p>
-            <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'>En plus des réductions présentes sur notre site il y a des méthodes pour encore plus accentuer les économies, et cela s'appelle 
+            Mais ce n&apos;est pas tout !</p>
+            <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'>En plus des réductions présentes sur notre site il y a des méthodes pour encore plus accentuer les économies, et cela s&apos;appelle 
                 les crédits voyage. À chaque réservation effectuée sur la plateforme, vous cumulez des crédits voyage. Ces crédits vous permettent de réaliser 
-                des économies encore plus significatives sur vos réservations futures. Ceux-ci n'expirent jamais et peuvent être utilisés à tout moment. 
-                De plus, l'application propose un système de partage intéressant. Lorsque vous réservez un hôtel, la plateforme vous offre la possibilité 
+                des économies encore plus significatives sur vos réservations futures. Ceux-ci n&apos;expirent jamais et peuvent être utilisés à tout moment. 
+                De plus, l&apos;application propose un système de partage intéressant. Lorsque vous réservez un hôtel, la plateforme vous offre la possibilité 
                 de gagner 30% de crédits voyage supplémentaires en partageant simplement votre réservation sur le réseau social Facebook.</p><br></br>
-                <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'>Pour ce qu'il s'agit de la formule Elite elle présente encore un avantage supplémentaire (Il faut bien qu'on vous remercie de la confiance !).
-                Il s'agit de la présence de points de fidélité, points qui peuvent être utilisés pour effectuer des économies supplémentaires (et oui, encore!).
-                 Les points de fidélité sont cumulés chaque mois grâce à l'abonnement Élite et n'expirent jamais. (1 point de fidélité = 1€)</p>
+                <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'>Pour ce qu&apos;il s&apos;agit de la formule Elite elle présente encore un avantage supplémentaire (Il faut bien qu&apos;on vous remercie de la confiance !).
+                Il s&apos;agit de la présence de points de fidélité, points qui peuvent être utilisés pour effectuer des économies supplémentaires (et oui, encore!).
+                 Les points de fidélité sont cumulés chaque mois grâce à l&apos;abonnement Élite et n&apos;expirent jamais. (1 point de fidélité = 1€)</p>
             <h6 className='text-sky-500 font-bold text-3xl mb-6 ml-14'>Conclusion </h6>
             <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'>
-            Qu'attendez-vous pour passer à l'action pour changer votre vie ainsi que votre potentiel de découverte du monde et d'activités extraordinaires ?
+            Qu&apos;attendez-vous pour passer à l&apos;action pour changer votre vie ainsi que votre potentiel de découverte du monde et d&apos;activités extraordinaires ?
             Rejoignez-nous dès maintenant sur TravelAdvantage : 
             </p>
             <br></br>
