@@ -88,7 +88,7 @@ export default function bons_plans(){
             <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'>De vous à moi, je vous recommande la version Plus ou éventuellement la Elite si vous êtes ambicieux, 
             car vous pourrez la partager avec un ami ou membre de la famille et bénéficier de tous les avantages de ces abonnements pour la moitié du prix ;)</p>
             <br></br>
-            <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'> J'espère de tout coeur recevoir la nouvelle concernant votre voyage dans votre pays de rêve !</p><br></br>
+            <p className='flex text-2xl text-black mb-6 ml-14 mr-14 justify-between'> J&apos;espère de tout coeur recevoir la nouvelle concernant votre voyage dans votre pays de rêve !</p><br></br>
             <p className='flex text-2xl font-bold text-black ml-14 mr-14 justify-between'>À bientôt !</p><br></br>
             
             </>
