@@ -9,7 +9,7 @@ const navigation = [
   { name: "Compétences", href: "#competences" },
   { name: "Projets", href: "#projets" },
   { name: "Expériences", href: "#experiences" },
-  { name: "Bons Plans", href: "bons_plans" },
+  { name: "Bons Plans (WIP)", href: "bons_plans" },
   // { name: <Image src={GithubIcon} alt="Github Icon"/>, href: 'https://github.com/Hezaerd '},
 ];
 
