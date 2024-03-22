@@ -8,7 +8,7 @@ const Contact = () => {
         Cliquez ici pour envoyer un mail
       </a>
       <div className='ml-8'>Ou utilisez l&apos;emplacement ci-dessous :</div>
-      <form action='https://api.web3forms.com/submit' method='POST'>
+      <form action='https://api.web3forms.com/submit' method='POST' id='contact'>
         <div className='bg-slate-400 text-center'>
           <input
             type='hidden'
