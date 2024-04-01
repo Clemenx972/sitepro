@@ -9,6 +9,7 @@ const navigation = [
   { name: "Compétences", href: "#competences" },
   { name: "Projets", href: "#projets" },
   { name: "Expériences", href: "#experiences" },
+  { name: "Contact", href: "#contact" },
   // { name: "Bons Plans (WIP)", href: "bons_plans" },
 ];
 
