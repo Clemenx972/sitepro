@@ -35,6 +35,9 @@ body {
     width: 100%;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 /* h2 {
   font-size: 1.9em;
   color: #333;
