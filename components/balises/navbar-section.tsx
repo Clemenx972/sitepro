@@ -10,15 +10,14 @@ const navigation = [
   { name: "Projets", href: "#projets" },
   { name: "Expériences", href: "#experiences" },
   // { name: "Bons Plans (WIP)", href: "bons_plans" },
-  // { name: <Image src={GithubIcon} alt="Github Icon"/>, href: 'https://github.com/Hezaerd '},
 ];
 
 export default function Navbar_Section() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=' border-[#33353F] top-0 left-0 right-0 z-10 bg-black bg-[#9AC1F0] bg-opacity-90'>
-      <div className=' flex-wrap items-center mx-auto p-8'>
+    <nav className='w-full left-0 right-0 z-10 bg-[#9AC1F0] bg-opacity-90'>
+      <div className=' container flex-wrap items-center mx-auto p-8'>
         <Link
           href='/'
           className='text-2xl md:text-5xl text-white font-semibold'

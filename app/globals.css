@@ -15,6 +15,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+body {
+  width: device-width;
+}
 /* 
 body {
   color: rgb(var(--foreground-rgb));
@@ -25,47 +28,50 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
-
-h2 {
+@media screen and (max-width: 768px) {
+  h1,
+  h2,
+  h3 {
+    width: 100%;
+  }
+}
+/* h2 {
   font-size: 1.9em;
   color: #333;
   margin-left: 120px;
   margin-bottom: 20px;
-
 }
-h1{
-font-size: 4.5em;
+h1 {
+  font-size: 4.5em;
   color: #333;
   text-align: left;
   margin-top: 70px;
   margin-left: 120px;
 }
 
-h3{
+h3 {
   font-size: 1.2em;
-  color : #333;
+  color: #333;
   text-align: left;
   margin-left: 120px;
   margin-right: 40px;
-  }
+} */
 
-
-button{
-  font-size: 1.0em;
-  color : #333333;
+button {
+  font-size: 1em;
+  color: #333333;
   text-align: center;
   margin-left: 0px;
   margin-right: 40px;
-  margin-top: 0px;  
+  margin-top: 0px;
   margin-bottom: 30px;
   background-color: #00000045;
   color: white;
   padding: 14px 20px;
   border-radius: 30px;
   cursor: pointer;
-  }
+}
 
-  button:hover {
-    background-color: #E45F2B;
-  }
-
+button:hover {
+  background-color: #e45f2b;
+}

@@ -12,20 +12,22 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Head>
         <title>Mon site</title>
         <link rel='icon' type='image/jpg' href='/logo_cyber_2.jpg' />
       </Head>
-
-      <Navbar_Section />
-      <Presentation />
-      <Competences />
-      <Projets />
-      <Experiences />
-      <Contact />
-      <div></div>
-      <Footer_Section />
-    </>
+      <main className='flex min-h-screen flex-col'>
+        <Navbar_Section />
+        <div className='container mx-auto mt-24 px-12 py-4 '>
+          <Presentation />
+          <Competences />
+          <Projets />
+          <Experiences />
+          <Contact />
+        </div>
+        <Footer_Section />
+      </main>
+    </div>
   );
 }
