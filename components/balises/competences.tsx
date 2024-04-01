@@ -136,7 +136,9 @@ const Competences = () => {
               </div>
 
               <div className='grid'>
-                <h5 className='text-l font-bold justify-center text-center'>Autre</h5>
+                <h5 className='text-l font-bold justify-center text-center'>
+                  Autre
+                </h5>
                 <ul className='grid gap-2 mt-12 justify-center'>
                   <li className='flex items-center gap-1 text-lg'>
                     <span>
@@ -146,9 +148,15 @@ const Competences = () => {
                         height={30}
                         width={20}
                       />
+                      <a
+                        href='https://github.com/Clemenx972'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='hover:text-orange-500'
+                      >
+                        Github
+                      </a>
                     </span>
-
-                    <span className='text-xl'>github</span>
                   </li>
 
                   <li className='flex items-center gap-1 text-lg'>
@@ -163,10 +171,11 @@ const Competences = () => {
 
                     <span className='text-1xl'>vercel</span>
                   </li>
+
                   <li className='flex items-center gap-1 text-lg'>
                     <a
                       href='/Steven_ETIENNE-Routing Switch-certificate CISCO.pdf'
-                      className='text-xl'
+                      className='text-xl hover:text-orange-500'
                       target='_blank'
                     >
                       <span>
