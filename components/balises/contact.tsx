@@ -1,6 +1,9 @@
 const Contact = () => {
   return (
     <>
+      <h4 className='mt-6 mb-2 m:mb-10 text-4x1 text-center font-extrabold text-2xl'>
+        Me contacter
+      </h4>
       <form
         action='https://api.web3forms.com/submit'
         method='POST'
