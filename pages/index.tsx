@@ -8,6 +8,7 @@ import Competences from "@/components/balises/competences";
 import Projets from "@/components/balises/projets";
 import Experiences from "@/components/balises/experiences";
 import Contact from "@/components/balises/contact";
+import Elevator from "@/components/balises/elevator";
 import Head from "next/head";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
           <Experiences />
           <Contact />
         </div>
+        <Elevator />
         <Footer_Section />
       </main>
     </div>
