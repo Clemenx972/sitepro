@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Mon site</title>
+        <title>Portfolio</title>
         <link rel='icon' type='image/jpg' href='/logo_cyber_2.jpg' />
       </Head>
       <main className='flex min-h-screen flex-col'>
