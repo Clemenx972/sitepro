@@ -23,7 +23,7 @@ const Contact = () => {
                 type='text'
                 name='sujet'
                 placeholder='Etienne Steven'
-                className=' w-full h-full flex-col gap-5  font-medium pl-[25px] rounded-[50px] bg-gray-[#DCDCDC] border-[none] mb-4 rounded-lg; block;'
+                className=' w-full h-full sm:w-[500px] sm:h-[50px] flex-col gap-5  font-medium pl-[5px] rounded-[50px] bg-gray-[#DCDCDC] border-[none] mb-4 rounded-lg; block;'
                 required
               />
             </div>
@@ -33,7 +33,7 @@ const Contact = () => {
                 type='email'
                 name='email'
                 placeholder='prenom.nom@gmail.com'
-                className='flex-col gap-5 w-full h-full gap-5 mb-4 font-medium pl-[25px] rounded-[50px] border-[none] rounded-lg;'
+                className='flex-col gap-5 w-full h-full sm:w-[500px] sm:h-[50px] gap-5 mb-4 font-medium pl-[5px] rounded-[50px] border-[none] rounded-lg;'
                 required
               />
             </div>
@@ -43,7 +43,7 @@ const Contact = () => {
                 type='text'
                 name='sujet'
                 placeholder='Recrutement, Projet, Autre...'
-                className='flex-col gap-5 w-full h-full  font-medium pl-[25px] rounded-[50px] bg-gray-[#DCDCDC] border-[none] mb-4 rounded-lg; block;'
+                className='flex-col gap-5 w-full h-full sm:w-[500px] sm:h-[50px] font-medium pl-[5px] rounded-[50px] bg-gray-[#DCDCDC] border-[none] mb-4 rounded-lg; block;'
                 required
               />
             </div>
@@ -52,7 +52,7 @@ const Contact = () => {
               <textarea
                 name='message'
                 placeholder='Salut !'
-                className='pt-4 gap-5 w-full h-full  font-medium pl-[25px] rounded-[50px] border-[none] rounded-lg ;'
+                className='pt-4 gap-5 w-full h-full sm:w-[500px] sm:h-[50px] font-medium pl-[5px] rounded-[50px] border-[none] rounded-lg ;'
                 required
               ></textarea>
             </div>
