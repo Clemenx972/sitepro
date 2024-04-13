@@ -1,14 +1,13 @@
 import "@/app/globals.css";
 
-import bons_plans from "@/components/balises/bons_plans-section";
-import Navbar_Section from "@/components/balises/navbar-section";
-import Footer_Section from "@/components/balises/footer-section";
-import Presentation from "@/components/balises/presentation";
 import Competences from "@/components/balises/competences";
-import Projets from "@/components/balises/projets";
-import Experiences from "@/components/balises/experiences";
 import Contact from "@/components/balises/contact";
 import Elevator from "@/components/balises/elevator";
+import Experiences from "@/components/balises/experiences";
+import Footer_Section from "@/components/balises/footer-section";
+import Navbar_Section from "@/components/balises/navbar-section";
+import Presentation from "@/components/balises/presentation";
+import Page from "@/components/balises/page_projets";
 import Head from "next/head";
 
 export default function Home() {
@@ -23,7 +22,7 @@ export default function Home() {
         <div className='container mx-auto mt-24 px-12 py-4 '>
           <Presentation />
           <Competences />
-          <Projets />
+          <Page />
           <Experiences />
           <Contact />
         </div>

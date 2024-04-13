@@ -2,7 +2,7 @@ const Experiences = () => {
   return (
     <>
       <section id='experiences'>
-        <div className=' w-full'>
+        <div className=' w-full mt-8'>
           <div className='w-full md:mr-10 mr-0'>
             <h4 className='mb-6 sm:mb-10 text-4x1 text-center font-extrabold text-2xl'>
               Expériences

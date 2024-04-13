@@ -193,6 +193,7 @@ const Competences = () => {
               </div>
             </div>
           </div>
+          <h4 className='text-2xl mt-8 mb-6 sm:mb-10 text-4x1 text-center font-extrabold' >Mes Projets</h4>
         </div>
       </section>
     </>

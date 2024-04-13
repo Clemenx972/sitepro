@@ -15,7 +15,7 @@ const Presentation = () => {
           <h3 className='mt-10'>
             {" "}
             <button>
-              <a href='./CV_STEVEN_ETIENNE.pdf' download>
+              <a href='./CV_STEVEN_2024.pdf' download>
                 {" "}
                 Télécharger CV
               </a>

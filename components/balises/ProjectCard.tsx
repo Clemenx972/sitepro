@@ -1,25 +1,75 @@
-import React from 'react'
-
-const Projets = () => {
-  return (
-    <>
-    <section id='projets'>
-    <div className="hidden sm:block w-full">
-        <div className="w-full">
-            <h4 className='mb-6 sm:mb-10 text-4x1 text-center font-extrabold text-2xl'>Projets</h4>
-            <div className='flex justify-between'>
-                <div className='flex justify-between'>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    </section></>
-  )
+"use client";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+interface Props {
+  image: string;
+  title: string;
+  text: string;
+  git: string;
 }
 
-export default Projets
+const ProjectCard = ({ image, title, text, git }: Props) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  function handleflip() {
+    if (!isAnimating) {
+      setIsFlipped(!isFlipped);
+      setIsAnimating(true);
+    }
+  }
+  return (
+    <>
+      <section id='projets'>
+        <div className=' sm:block w-full'>
+          <div className='w-full'>
+            <div className='flex justify-between'>
+              <div className='flex justify-between'>
+                <div
+                  onClick={handleflip}
+                  className='cursor-pointer bg-white shadow-lg rounded-lg p-4 w-screen h-[280px] md:w-[450px] mb-6'
+                >
+                  <motion.div
+                    className='w-full h-full flip-card-inner'
+                    initial={false}
+                    animate={{ rotateY: isFlipped ? 180 : 360 }}
+                    transition={{ duration: 0.5, animationDirection: "normal" }}
+                    onAnimationComplete={() => setIsAnimating(false)}
+                  >
+                    <div style={{ backgroundImage: `url(${image})`}} 
+                    className='w-full h-full group relative flip-card-front bg-center text-black rounded-lg p-4'>
+                      <div className='absolute inset-0 w-full h-full rounded-md bg-black opacity-0 group-hover:opacity-40 ' />
+                      <div className='absolute inset-0 w-full h-full text-[20px] pb-10 hidden group-hover:flex items-center justify-center'>
+                        Learn More
+                      </div>
+                    </div>
+
+                    <div className='w-full h-full flip-card-back bg-cover bg-center text-white rounded-lg p-4'>
+                      <div className='absolute inset-0 w-full h-full rounded-md bg-black opacity-0' />
+                      <div className='flex flex-col gap-10 py-3 '>
+                        <h1 className='text-black text-2xl font-bold'>
+                          {title}
+                        </h1>
+                        <p className='text-black text-[20px]'>{text}</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                  <div className='mt-5 ml-40 hover:text-orange-500'>
+                    <a href={git} target='_blank'>
+                      Source
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default ProjectCard;
 
 // "use client";
 
