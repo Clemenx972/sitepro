@@ -1,63 +1,53 @@
-import Skill from "./skill";
-const skillFront = [
+import Skill, { SkillProps } from "./skill";
+
+const frontSkills: SkillProps[] = [
   {
-    nom: "html",
-    src: "./public/images/icones/html-svg.svg",
+    name: "HTML",
   },
   {
-    nom: "css",
-    src: "./public/images/icones/css-svg.svg",
+    name: "CSS",
   },
   {
-    nom: "react",
-    src: "./public/images/icones/react-svg.svg",
+    name: "ReactJS",
   },
   {
-    nom: "javascript",
-    src: "./public/images/icones/javascript-svg.svg",
+    name: "JavaScript",
   },
   {
-    nom: "typescript",
-    src: "./public/images/icones/typescript-svg.svg",
+    name: "TypeScript",
   },
   {
-    nom: "tailwind",
-    src: "./public/images/icones/tailwind-svg.svg",
+    name: "TailwindCSS",
   },
 ];
 
-const skillBack = [
+const backSkills: SkillProps[] = [
   {
-    nom: "C++",
-    src: "./public/images/icones/cpp-svg.svg",
+    name: "C++",
+    customIcon: "cpp",
   },
   {
-    nom: "Python",
-    src: "./public/images/icones/python-svg.svg",
+    name: "Python",
   },
   {
-    nom: "Mysql",
-    src: "./public/images/icones/mysql-svg.svg",
+    name: "MySql",
   },
   {
-    nom: "postgresql",
-    src: "./public/images/icones/postgresql-svg.svg",
+    name: "Postgresql",
   },
 ];
 
-const skills = [
+const serviceSkills: SkillProps[] = [
   {
-    nom: "Github",
-    src: "./public/images/icones/github-svg.svg",
+    name: "Github",
     url: "https://github.com/Clemenx972",
   },
   {
-    nom: "Vercel",
-    src: "./public/images/icones/vercel-svg.svg",
+    name: "Vercel",
   },
   {
-    nom: "Cisco CCNAV",
-    src: "./public/images/icones/cisco-svg.svg",
+    name: "Cisco CCNAV",
+    customIcon: "cisco",
     url: "./public/Steven_ETIENNE-Routing Switch-certificate CISCO.pdf",
   },
 ];
@@ -65,55 +55,40 @@ const skills = [
 export default function SkillsSection() {
   return (
     <>
-      <section id='competences'>
-        <div className='items-center sm:py-16 lg:px-16'>
-          <div className='mt-4 md:mt-0 h-full w-full'>
-            <h4 className='text-coral text-2xl mb-6 sm:mb-10 text-4x1 text-center font-extrabold '>
+      <section id="competences">
+        <div className="items-center sm:py-16 lg:px-16">
+          <div className="mt-4 md:mt-0 h-full w-full">
+            <h4 className="text-coral text-2xl mb-6 sm:mb-10 text-4x1 text-center font-extrabold ">
               Compétences
             </h4>
-            <div className='grid grid-cols-3'>
-              <div className='grid'>
-                <h5 className='text-lg text-coral font-bold text-center'>
+            <div className="grid grid-cols-1 sm:grid-cols-3">
+              {/* Cols 1 */}
+              <div className="grid py-3 sm:py-0">
+                <h5 className="text-lg text-coral font-bold text-center">
                   Front-end
                 </h5>
-                {skillFront.map((skill, index) => (
-                  <div>
-                    <Skill name={skill.nom} src={skill.src} />
-                  </div>
+                {frontSkills.map((skill, index) => (
+                  <Skill key={index} {...skill} />
                 ))}
               </div>
-              <div>
-                <h5 className='text-lg text-coral font-bold text-center'>
+
+              {/* Cols 2 */}
+              <div className="grid py-3 sm:py-0">
+                <h5 className="text-lg text-coral font-bold text-center">
                   Back-end
                 </h5>
-                {skillBack.map((skill, index) => (
-                  <div key={index} className='flex items-center gap-1 text-lg'>
-                    <span>
-                      <img src={skill.src} height={30} width={20} />
-                    </span>
-                    <span className='text-xl text-coral'>{skill.nom}</span>
-                  </div>
+                {backSkills.map((skill, index) => (
+                  <Skill key={index} {...skill} />
                 ))}
               </div>
-              <div>
-                <h5 className='text-l font-bold justify-center text-center'>
-                  Autre
+
+              {/* Cols 3 */}
+              <div className="grid py-3 sm:py-0">
+                <h5 className="text-lg text-coral font-bold text-center">
+                  Services
                 </h5>
-                {skills.map((skill, index) => (
-                  <div key={index} className='flex items-center gap-1 text-lg'>
-                    <span>
-                      <img src={skill.src} height={30} width={20} />
-                    </span>
-                    if (skill?.url !== undefined)
-                    {
-                      <span className='text-xl text-coral'>
-                        <a href={skill.url} target='_blank'>
-                          {skill.nom}
-                        </a>
-                      </span>
-                    }
-                    <span className='text-xl text-coral'>{skill.nom}</span>
-                  </div>
+                {serviceSkills.map((skill, index) => (
+                  <Skill key={index} {...skill} />
                 ))}
               </div>
             </div>

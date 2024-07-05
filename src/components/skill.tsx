@@ -1,27 +1,37 @@
-export default function Skill(name: string, icon: string, url?: string) {
+export interface SkillProps {
+  name: string;
+  customIcon?: string;
+  url?: string;
+}
+
+export default function Skill(skill: SkillProps) {
   return (
     <li className="flex items-center gap-1 text-lg">
       <span>
         <img
-          src={`/images/icones/${icon}.png`}
-          alt={name}
+          src={`/images/icones/${
+            skill.customIcon || skill.name.toLowerCase()
+          }.svg`}
+          alt={skill.name}
           height={30}
           width={20}
         />
       </span>
-
-      {url ? (
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-1xl hover:text-primary"
-        >
-          {name}
-        </a>
-      ) : (
-        <span className="text-1xl">{name}</span>
-      )}
+      <div className="w-2" /> {/* Spacer */}
+      <div className="text-coral text-lg">
+        {skill.url ? (
+          <a
+            href={skill.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary"
+          >
+            {skill.name}
+          </a>
+        ) : (
+          <span>{skill.name}</span>
+        )}
+      </div>
     </li>
   );
 }
