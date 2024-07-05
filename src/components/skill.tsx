@@ -9,7 +9,19 @@ export default function Skill(name: string, icon: string, url?: string) {
           width={20}
         />
       </span>
-      <span className="text-1xl">{name}</span>
+
+      {url ? (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-1xl hover:text-primary"
+        >
+          {name}
+        </a>
+      ) : (
+        <span className="text-1xl">{name}</span>
+      )}
     </li>
   );
 }
