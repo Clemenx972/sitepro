@@ -42,11 +42,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
-/* Salut
-Je suis un jeune étudiant passioné d'informatique qui s'engage
-quotidiennement dans la découverte de nouvelles pratiques, quelles
-soient axées sur du développement web ou applicatif. Je porte
-également un intérêt au développement personnel afin de devenir
-chaque jour meilleur que le précédent.
-*/
