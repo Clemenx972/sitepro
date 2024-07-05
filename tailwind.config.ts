@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
@@ -9,6 +10,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+    },
+    colors: {
+      ...colors,
+      primary: "#ea4747",
+      secondary: "#f16b64",
+      coral: "#eee3e1",
+      lavender: "#ac8798",
+      darkpurple: "#090a0f",
     },
   },
   plugins: [],

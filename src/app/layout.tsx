@@ -13,8 +13,10 @@ export default async function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr">
-      <NavigationBar />
-      {children}
+      <body className="flex min-h-screen flex-col bg-darkpurple">
+        <NavigationBar />
+        {children}
+      </body>
     </html>
   );
 }

@@ -18,12 +18,12 @@ export default function NavigationBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full left-0 right-0 z-10 bg-[#9AC1F0] bg-opacity-90">
+    <nav className="w-full left-0 right-0 z-10 bg-primary">
       <div className=" container flex-wrap items-center mx-auto p-8">
         <Link
           href="/"
           className="text-2xl md:text-5xl text-white font-semibold"
-        ></Link>
+        />
         <div className="block md:hidden">
           {!isOpen ? (
             <button
@@ -45,15 +45,11 @@ export default function NavigationBar() {
         </div>
         <div className="hidden md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0 justify-center">
-            {navigation.map((item) => {
-              return (
-                <>
-                  <li key={item.name}>
-                    <NavLink name={item.name} href={item.href} />
-                  </li>
-                </>
-              );
-            })}
+            {navigation.map((item) => (
+              <li key={item.name}>
+                <NavLink name={item.name} href={item.href} />
+              </li>
+            ))}
           </ul>
         </div>
       </div>
