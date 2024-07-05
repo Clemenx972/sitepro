@@ -13,7 +13,7 @@ const config: Config = {
     },
     colors: {
       ...colors,
-      primary: "#ea4747",
+      primary: "#ef1740",
       secondary: "#f16b64",
       coral: "#eee3e1",
       lavender: "#ac8798",
