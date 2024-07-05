@@ -32,9 +32,11 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="col-span-5 w-full sm:w-fit text-2xl text-center sm:text-justify place-self-center text-coral mt-4 lg:mt-0">
-          Étudiant passionné d'informatique, je découvre chaque jour de
-          nouvelles pratiques en développement web et applicatif. Je m'intéresse
-          aussi au développement personnel pour m'améliorer constamment.
+          Salut !<br />
+          Je suis un jeune étudiant passionné d'informatique, je découvre chaque
+          jour de nouvelles technologies en développement web et applicatif. Je
+          m'intéresse aussi au développement personnel afin de devenir chaque
+          jour meilleur que le précédent.
         </div>
       </div>
     </section>
