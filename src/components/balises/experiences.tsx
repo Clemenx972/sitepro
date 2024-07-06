@@ -3,11 +3,11 @@ const Experiences = () => {
     <>
       <section id='experiences'>
         <div className=' w-full mt-8'>
-          <div className='w-full md:mr-10 mr-0'>
-            <h4 className='mb-6 sm:mb-10 text-4x1 text-center font-extrabold text-2xl'>
+          <div className='w-full md:mr-10 mr-0 text-coral'>
+            <h4 className='mb-6 sm:mb-10 text-4x1 text-center font-extrabold text-2xl '>
               Expériences
             </h4>
-            <div className='justify-between'>
+            <div className='justify-between grid-cols-2 '>
               <h5 className='flex font-bold text-1x1 justify-center'>
                 <div className='text-center mr-6'>
                   Diplômes :<div className='font-semibold'>(Théorie)</div>

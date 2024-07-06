@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
-    <>
-      <h4 className='mt-6 mb-2 m:mb-10 text-4x1 text-center font-extrabold text-2xl'>
+    <div className='sm:container sm:border-4 sm:border-coral mt-16'>
+      <h4 className='mt-4 mb-2 m:mb-10 font-extrabold text-2xl text-coral text-center'>
         Me contacter
       </h4>
       <form
@@ -12,11 +12,7 @@ const Contact = () => {
       >
         <div>
           <div>
-            <input
-              type='hidden'
-              name='access_key'
-              value='9ee50700-76c3-4780-bf66-a56bc8fbe4f7'
-            />
+            <input type='hidden' name='access_key' value='MY_MAIL_KEY' />
             <div className='justify-center pt-4 grid'>
               <label className=''>Votre Nom</label>
               <input
@@ -33,7 +29,7 @@ const Contact = () => {
                 type='email'
                 name='email'
                 placeholder='prenom.nom@gmail.com'
-                className='flex-col gap-5 w-full h-full sm:w-[500px] sm:h-[50px] gap-5 mb-4 font-medium pl-[5px] rounded-[50px] border-2 border-gray-800 hover:border-orange-600 rounded-lg;'
+                className='flex-col gap-5 w-full h-full sm:w-[500px] sm:h-[50px] mb-4 font-medium pl-[5px] rounded-[50px] border-2 border-gray-800 hover:border-orange-600 rounded-lg;'
                 required
               />
             </div>
@@ -56,7 +52,7 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <div className='ml-6 pt-4 grid justify-center'>
+            <div className='ml-4 pt-4 grid justify-center sm:justify-left'>
               <button
                 type='submit'
                 className='bg-blue-800 hover:bg-blue-950 font-medium w-28'
@@ -67,7 +63,7 @@ const Contact = () => {
           </div>
         </div>
       </form>
-    </>
+    </div>
   );
 };
 

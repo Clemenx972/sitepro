@@ -5,7 +5,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import { useState } from "react";
 import MenuOverlay from "./menu/menu-overlay";
-
 const navigation = [
   { name: "Accueil", href: "/" },
   { name: "Compétences", href: "#competences" },
@@ -18,33 +17,33 @@ export default function NavigationBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full left-0 right-0 z-10 bg-primary">
-      <div className=" container flex-wrap items-center mx-auto p-8">
+    <nav className='w-full left-0 right-0 z-10 bg-primary'>
+      <div className=' container flex-wrap items-center mx-auto p-8'>
         <Link
-          href="/"
-          className="text-2xl md:text-5xl text-white font-semibold"
+          href='/'
+          className='text-2xl md:text-5xl text-white font-semibold'
         />
-        <div className="block md:hidden">
+        <div className='block md:hidden'>
           {!isOpen ? (
             <button
-              id="nav-toggle"
-              className="flex items-center px-3 py-2 border rounded text-slate-200 border-slate-200 hover:text-white hover:border-white"
+              id='nav-toggle'
+              className='flex items-center px-3 py-2 border rounded text-slate-200 border-slate-200 hover:text-white hover:border-white'
               onClick={() => setIsOpen(true)}
             >
-              <Bars3Icon className="h-3 w-3" />
+              <Bars3Icon className='h-3 w-3' />
             </button>
           ) : (
             <button
-              id="nav-toggle"
-              className="flex items-center px-3 py-2 border rounded text-slate-200 border-slate-200 hover:text-white hover:border-white"
+              id='nav-toggle'
+              className='flex items-center px-3 py-2 border rounded text-slate-200 border-slate-200 hover:text-white hover:border-white'
               onClick={() => setIsOpen(false)}
             >
-              <XMarkIcon className="h-5 w-5" />
+              <XMarkIcon className='h-5 w-5' />
             </button>
           )}
         </div>
-        <div className="hidden md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0 justify-center">
+        <div className='hidden md:block md:w-auto' id='navbar-default'>
+          <ul className='font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0 justify-center'>
             {navigation.map((item) => (
               <li key={item.name}>
                 <NavLink name={item.name} href={item.href} />

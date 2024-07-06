@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 interface Props {
   image: string;
   title: string;
@@ -36,8 +36,10 @@ const ProjectCard = ({ image, title, text, git }: Props) => {
                     transition={{ duration: 0.5, animationDirection: "normal" }}
                     onAnimationComplete={() => setIsAnimating(false)}
                   >
-                    <div style={{ backgroundImage: `url(${image})`}} 
-                    className='w-full h-full group relative flip-card-front bg-center text-black rounded-lg p-4'>
+                    <div
+                      style={{ backgroundImage: `url(${image})` }}
+                      className='w-full h-full group relative flip-card-front bg-center text-black rounded-lg p-4'
+                    >
                       <div className='absolute inset-0 w-full h-full rounded-md bg-black opacity-0 group-hover:opacity-40 ' />
                       <div className='absolute inset-0 w-full h-full text-[20px] pb-10 hidden group-hover:flex items-center justify-center'>
                         Learn More
@@ -54,7 +56,7 @@ const ProjectCard = ({ image, title, text, git }: Props) => {
                       </div>
                     </div>
                   </motion.div>
-                  <div className='mt-5 ml-40 hover:text-orange-500'>
+                  <div className='mt-5 ml-40 text-coral hover:text-primary'>
                     <a href={git} target='_blank'>
                       Source
                     </a>
