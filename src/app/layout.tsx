@@ -12,8 +12,8 @@ export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr">
-      <body className="flex min-h-screen flex-col bg-darkpurple">
+    <html lang='fr'>
+      <body className='flex min-h-screen flex-col bg-darkpurple'>
         <NavigationBar />
         {children}
       </body>

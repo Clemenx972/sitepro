@@ -1,6 +1,8 @@
 "use client";
+import colorToggle from "@/components/colorTogle";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
 interface Props {
   image: string;
   title: string;
@@ -11,6 +13,13 @@ interface Props {
 const ProjectCard = ({ image, title, text, git }: Props) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [colorState, setColorState] = useState(colorToggle.state);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setColorState(colorToggle.state);
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
 
   function handleflip() {
     if (!isAnimating) {
@@ -56,10 +65,20 @@ const ProjectCard = ({ image, title, text, git }: Props) => {
                       </div>
                     </div>
                   </motion.div>
-                  <div className='mt-5 ml-40 text-coral hover:text-primary'>
-                    <a href={git} target='_blank'>
-                      Source
-                    </a>
+                  <div>
+                    {colorState ? (
+                      <div className='mt-5 ml-40 text-secondary hover:text-darkprimary'>
+                        <a href={git} target='_blank'>
+                          Source
+                        </a>
+                      </div>
+                    ) : (
+                      <div className='mt-5 ml-40 text-coral hover:text-primary'>
+                        <a href={git} target='_blank'>
+                          Source
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
