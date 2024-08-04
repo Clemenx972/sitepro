@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import "./globals.css";
-
+import ToggleButton from "@/components/toggleButton";
 import NavigationBar from "@/components/navBar";
 
 export const metadata: Metadata = {

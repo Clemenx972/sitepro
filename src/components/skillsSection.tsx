@@ -58,7 +58,7 @@ const serviceSkills: SkillProps[] = [
   {
     name: "Cisco CCNAV",
     customIcon: "cisco",
-    url: "./public/Steven_ETIENNE-Routing Switch-certificate CISCO.pdf",
+    url: "public/certificat_cisco.pdf",
   },
 ];
 

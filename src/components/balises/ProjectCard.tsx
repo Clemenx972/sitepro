@@ -46,7 +46,10 @@ const ProjectCard = ({ image, title, text, git }: Props) => {
                     onAnimationComplete={() => setIsAnimating(false)}
                   >
                     <div
-                      style={{ backgroundImage: `url(${image})` }}
+                      style={{
+                        backgroundImage: `url(${image})`,
+                        backgroundSize: "cover",
+                      }}
                       className='w-full h-full group relative flip-card-front bg-center text-black rounded-lg p-4'
                     >
                       <div className='absolute inset-0 w-full h-full rounded-md bg-black opacity-0 group-hover:opacity-40 ' />
