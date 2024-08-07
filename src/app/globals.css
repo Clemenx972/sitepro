@@ -34,7 +34,7 @@ body {
 .flip-card-back {
   transform: rotateY(180deg);
 }
-/* 
+/*
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -92,5 +92,5 @@ button {
 }
 
 button:hover {
-  background-color: #e45f2b;
+  background-color: #f16b64;
 }

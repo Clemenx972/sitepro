@@ -36,7 +36,7 @@ export default function Skill(skill: SkillProps) {
                 href={skill.url}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='hover:text-orange-600'
+                className='hover:text-darksecondary'
               >
                 {skill.name}
               </a>

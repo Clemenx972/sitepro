@@ -14,7 +14,7 @@ const ToggleButton: React.FC = () => {
       <button
 
         onClick={handleButtonClick}
-        className='px-4 py-2 bg-white text-white rounded'
+        className='px-4 py-2 bg-white text-white rounded hover:bg-violet-600'
       >{colorToggle.state ? (
         <span>
         <img
