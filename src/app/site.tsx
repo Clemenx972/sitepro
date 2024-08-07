@@ -28,7 +28,7 @@ export default function Site() {
             <Page />
             <Experiences />
             <Contact />
-            <Elevator />
+            {/* <Elevator /> */}
             <Footer_Section />
             {/* <App />
             <ColorToggle />
@@ -43,7 +43,7 @@ export default function Site() {
           <Page />
           <Experiences />
           <Contact />
-          <Elevator />
+          {/* <Elevator /> */}
           <Footer_Section />
           {/* <App />
           <ColorToggle />

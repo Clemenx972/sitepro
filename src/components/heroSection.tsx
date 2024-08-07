@@ -67,7 +67,7 @@ export default function HeroSection() {
                   <a href='#contact'>Contactez moi</a>
                 </button>
                 <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-secondary to-primary hover:bg-slate-800 text-coral mt-3'>
-                  <span className='block bg-darkpurple hover:bg-slate-800 rounded-full px-5 py-2'>
+                  <span className='block bg-darkpurple hover:bg-primary rounded-full px-5 py-2'>
                     {/* TODO: mettre le bon cv */}
                     <a
                       href='/CV_STEVEN_ENTREPRISE_2024_FINAL.pdf'

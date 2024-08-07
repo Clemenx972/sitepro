@@ -134,7 +134,7 @@ const Experiences = () => {
                             Alternance Licence Pro MRIT{" "}
                             <a
                               href='https://www.cgss-martinique.fr'
-                              className='hover:text-orange-500'
+                              className='hover:text-primary'
                               target='_blank'
                             >
                               CGSSM
@@ -147,7 +147,7 @@ const Experiences = () => {
                             Stage de 1ème année de BTS SN IR{" "}
                             <a
                               href='https://groupe-acoma.com'
-                              className='hover:text-orange-500'
+                              className='hover:text-primary'
                               target='_blank'
                             >
                               Groupe Acoma
@@ -160,7 +160,7 @@ const Experiences = () => {
                             Stage de 3ème{" "}
                             <a
                               href='https://www.villes-internet.net/structs/57425fa3218c78dd964b4195'
-                              className='hover:text-orange-500'
+                              className='hover:text-primary'
                               target='_blank'
                             >
                               Cyberbase Robert
